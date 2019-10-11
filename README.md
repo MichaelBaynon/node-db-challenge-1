@@ -16,19 +16,19 @@ The Minimum Viable Product must be completed in three hours.
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your _Team Lead_ as collaborator on Github.
-- [ ] Clone your forked version of the Repository.
-- [ ] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `firstName-lastName`.
+- [X] Create a forked copy of this project.
+- [X] Add your _Team Lead_ as collaborator on Github.
+- [X] Clone your forked version of the Repository.
+- [X] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
+- [X] Implement the project on this Branch, committing changes regularly.
+- [X] Push commits: git push origin `firstName-lastName`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge `firstName-lastName` Branch into master on **your fork, don't make Pull Requests against Lambda's repository**.
-- [ ] Please don't merge your own pull request.
-- [ ] Add your _Team Lead_ as a Reviewer on the Pull-request
-- [ ] Your _Team Lead_ will count the challenge as done by merging the branch into _master_.
+- [X] Submit a Pull-Request to merge `firstName-lastName` Branch into master on **your fork, don't make Pull Requests against Lambda's repository**.
+- [X] Please don't merge your own pull request.
+- [X] Add your _Team Lead_ as a Reviewer on the Pull-request
+- [X] Your _Team Lead_ will count the challenge as done by merging the branch into _master_.
 
 ## Commits
 
@@ -38,13 +38,17 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] Explain the difference between `Relational Databases` and `SQL`.
+- [X] Explain the difference between `Relational Databases` and `SQL`.
+relational databases are just a type of database where as SQL is way to manage said databases
 
-- [ ] Why do tables need a `primary key`?
+- [X] Why do tables need a `primary key`?
+to easily identify them plus the primary key sort of acts like the base or root of the table its what identifies it and allows to use it for communication between tables
 
-- [ ] What is the name given to a table column that references the primary key on another table.
+- [X] What is the name given to a table column that references the primary key on another table.
+foreign key
 
-- [ ] What do we need in order to have a _many to many_ relationship between two tables.
+- [X] What do we need in order to have a _many to many_ relationship between two tables.
+two tables where multiple records are associated with multipe records on another table
 
 ## Minimum Viable Product
 
@@ -52,15 +56,17 @@ Take the steps necessary to complete the project from scratch. Start by initiali
 
 Complete the following tasks:
 
-- [ ] Design the data model and use _knex migrations_ to create the database and tables.
-- [ ] Build an API with endpoints for:
-  - [ ] adding resources.
-  - [ ] retrieving a list of resources.
-  - [ ] adding projects.
-  - [ ] retrieving a list of projects.
-  - [ ] adding tasks.
-  - [ ] retrieving a list of tasks. **The list of tasks should include the project name and project description**.
-- [ ] When returning `project` or `task` information, the `completed` property should be `true` or `false`.
+- [X] Design the data model and use _knex migrations_ to create the database and tables.
+- [X] Build an API with endpoints for:
+  - [X] adding resources.
+  - [X] retrieving a list of resources.
+  - [X] adding projects.
+  - [X] retrieving a list of projects.
+  - [X] adding tasks.
+  - [X] retrieving a list of tasks. **The list of tasks should include the project name and project description**.
+- [X] When returning `project` or `task` information, the `completed` property should be `true` or `false`.
+
+I have these things located in the "actual tasks" folder i know its a little rough with the naming conventions but it was last minute and didnt wanna go back and change the names
 
 For example, instead of returning a `task` that looks like this:
 
@@ -98,25 +104,25 @@ The API should return:
 
 A `project` is what needs to be done. We want to store the following data about a `project`:
 
-- [ ] a unique Id.
-- [ ] a name. This column is required.
-- [ ] a description.
-- [ ] a boolean that indicates if the project has been completed. This column cannot be NULL, the default value should be `false`.
+- [X] a unique Id.
+- [X] a name. This column is required.
+- [X] a description. `BE CAREFUL USING TEXT AND NOT STRING`
+- [X] a boolean that indicates if the project has been completed. This column cannot be NULL, the default value should be `false`.
 
 A `resource` is anything needed to complete a project, some examples are: a person, a tool, a meeting room or a software license. We want to store the following data about a `resource`:
 
-- [ ] a unique Id.
-- [ ] a name. This column is required.
-- [ ] a description.
+- [X] a unique Id.
+- [X] a name. This column is required. `BE CAREFUL USING TEXT AND NOT STRING`
+- [X] a description.
 
 The database should not allow resources with duplicate names.
 
 An `task` one of the steps needed to complete the project. We want to store the following data about an `task`.
 
-- [ ] a unique id.
-- [ ] a description of what needs to be done. This column is required.
-- [ ] a notes column to add additional information.
-- [ ] a boolean that indicates if the task has been completed. This column cannot be NULL, the default value should be `false`.
+- [X] a unique id.
+- [X] a description of what needs to be done. This column is required.
+- [X] a notes column to add additional information.
+- [X] a boolean that indicates if the task has been completed. This column cannot be NULL, the default value should be `false`.
 
 ## Stretch Problem
 
@@ -170,3 +176,5 @@ A `context` can be applied to more than one `task`. An task can be tied to more 
 When retrieving an `task` by _id_, add a property that lists all the `contexts` related to that task.
 
 _Good luck and have fun!_
+
+
