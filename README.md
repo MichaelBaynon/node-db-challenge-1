@@ -63,8 +63,8 @@ Complete the following tasks:
   - [X] adding projects.
   - [X] retrieving a list of projects.
   - [X] adding tasks.
-  - [ ] retrieving a list of tasks. **The list of tasks should include the project name and project description**.
-- [ ] When returning `project` or `task` information, the `completed` property should be `true` or `false`.
+  - [X] retrieving a list of tasks. **The list of tasks should include the project name and project description**.
+- [X] When returning `project` or `task` information, the `completed` property should be `true` or `false`.
 
 I have these things located in the "actual tasks" folder i know its a little rough with the naming conventions but it was last minute and didnt wanna go back and change the names
 

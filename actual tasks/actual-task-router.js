@@ -10,6 +10,7 @@ const router = express.Router()
 router.get('/', (req, res) => {
     ActualTasks.find()
     .then(tasks => {
+        tasks.map(task => task.completed = task.completed?true:false)
         res.json(tasks)
     })
     .catch(err => {
