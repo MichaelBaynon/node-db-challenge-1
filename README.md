@@ -66,6 +66,8 @@ Complete the following tasks:
   - [ ] retrieving a list of tasks. **The list of tasks should include the project name and project description**.
 - [ ] When returning `project` or `task` information, the `completed` property should be `true` or `false`.
 
+I have these things located in the "actual tasks" folder i know its a little rough with the naming conventions but it was last minute and didnt wanna go back and change the names
+
 For example, instead of returning a `task` that looks like this:
 
 ```js
@@ -175,4 +177,4 @@ When retrieving an `task` by _id_, add a property that lists all the `contexts` 
 
 _Good luck and have fun!_
 
-:)
+
