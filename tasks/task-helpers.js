@@ -2,6 +2,6 @@ module.exports = {
     isValidTask
 }
 
-function isValidTask(task) {
-    return !!task.task_name
+function isValidTask(project) {
+    return !!project.project_name
 }
